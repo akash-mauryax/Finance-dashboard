@@ -55,4 +55,4 @@ A stunning, responsive, and fully-featured Finance Dashboard built with React an
    npm run dev
    ```
 
-4. View the application instantly in your browser at the provided `localhost` link!
+4. View the application instantly in your browser at the provided https://akash-mauryax.github.io/Finance-dashboard/ link!
