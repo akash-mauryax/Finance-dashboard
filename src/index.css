@@ -1,0 +1,75 @@
+:root {
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Color Palette - Premium Dark Mode */
+  --bg-dark: #0a0c10;
+  --bg-panel: #14171f;
+  --bg-panel-hover: #1c202a;
+  --border-color: #272c39;
+  
+  --text-primary: #f0f2f5;
+  --text-secondary: #9aa0a6;
+  --text-muted: #5f6368;
+
+  --accent-cyan: #00e5ff;
+  --accent-cyan-dim: rgba(0, 229, 255, 0.15);
+  --accent-cyan-dimmer: rgba(0, 229, 255, 0.05);
+
+  --accent-purple: #9d4edd;
+  --status-success: #00c853;
+  --status-expense: #ff3d00;
+  
+  --border-radius: 16px;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 24px;
+  
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font-family);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input, select {
+  font-family: var(--font-family);
+  background: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px var(--accent-cyan-dim);
+}
+
+/* Glassmorphism Panel styles for components */
+.glass-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-glass);
+}
